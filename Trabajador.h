@@ -14,17 +14,17 @@ class Trabajador
         virtual float calcularSalarioNeto();
     
         Trabajador();
-	    Trabajador(string, int, float, int);
+	Trabajador(string, int, float, int);
 
-	    void setId(string);
-	    void setHorasLab(int);
-	    void setPrecioHora(float);
-	    void setAnnosLab(int);
+	void setId(string);
+	void setHorasLab(int);
+	void setPrecioHora(float);
+	void setAnnosLab(int);
 
-	    string getId();
-	    int getHorasLab();
-	    float getPrecioHora();
-	    int getAnnosLab();
+	string getId();
+	int getHorasLab();
+	float getPrecioHora();
+	int getAnnosLab();
 
     private:
         string id;

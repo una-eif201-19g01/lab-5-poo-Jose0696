@@ -1,19 +1,21 @@
 #ifndef TRABAJADOR_H
 #define TRABAJADOR_H
 #include <iostream>
+#include <string>
+#include <sstream>
 
 using namespace std;
 class Trabajador
 {
-    public:
-        virtual float calcularSalarioBase();
-        virtual float calcularHorasExtra();
-        virtual float calcularAnualidades();
-        virtual float calcularSalarioBruto();
-        virtual float calcularCargas();
-        virtual float calcularSalarioNeto();
+public:
+    virtual float calcularSalarioBase();
+    virtual float calcularHorasExtra();
+    virtual float calcularAnualidades();
+    virtual float calcularSalarioBruto();
+    virtual float calcularCargas();
+    virtual float calcularSalarioNeto();
     
-        Trabajador();
+    Trabajador();
 	Trabajador(string, int, float, int);
 
 	void setId(string);
@@ -26,11 +28,13 @@ class Trabajador
 	float getPrecioHora();
 	int getAnnosLab();
 
-    private:
-        string id;
-        int horasLab;
-        float precioHora;
-        int annosLaborados;
+	string toString();
+
+private:
+    string id;
+    int horasLab;
+    float precioHora;
+    int annosLaborados;
 };
 
 #endif // TRABAJADOR_H

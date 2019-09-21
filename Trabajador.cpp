@@ -87,3 +87,11 @@ float Trabajador::getPrecioHora() {
 int Trabajador::getAnnosLab() {
 	return annosLaborados;
 }
+
+string Trabajador::toString() {
+	stringstream reporte;
+	reporte << "El salario base es de: " << calcularSalarioBase() << endl;
+	reporte << "El salario bruto es de: " << calcularSalarioBruto() << endl;
+	reporte << "El salario neto es de: " << calcularSalarioNeto() << endl;
+	return reporte.str();
+}

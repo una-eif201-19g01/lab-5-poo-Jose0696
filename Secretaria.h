@@ -4,7 +4,8 @@
 
 class Secretaria:public Trabajador
 {
-
+public:
+	Secretaria(string, int, float, int);
 };
 
 #endif // SECRETARIA_H
